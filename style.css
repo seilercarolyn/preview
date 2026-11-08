@@ -139,6 +139,14 @@ footer a{color:var(--cobalt)}
 .fb-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:32px;color:var(--muted)}
 .fb-fallback b{font-family:var(--display);font-weight:400;font-size:28px;color:var(--ink)}
 @media (max-width:900px){.feed .inner{grid-template-columns:1fr}.fb-frame{min-height:620px}.fb-frame iframe{height:620px}}
+.fb-card{display:block;background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:var(--ink);box-shadow:0 14px 34px rgba(20,25,50,.08);transition:transform .2s}
+.fb-card:hover{transform:translateY(-3px)}
+.fb-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--line)}
+.fb-grid img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.fb-meta{display:grid;gap:2px;padding:18px 22px 22px}
+.fb-meta b{font-family:var(--display);font-weight:400;font-size:24px}
+.fb-meta span{color:var(--muted);font-size:15px}
+.fb-meta .fb-go{color:var(--cobalt);font-weight:600;margin-top:8px}
 
 .night{position:relative;color:var(--white);padding-block:140px 72px;background:var(--ink)}
 .night > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
